@@ -16,7 +16,7 @@ const StyledLink = styled(Link)`
 
 export const PokemonCard = ({ pokemon, url, id }) => (
   <Column xs={2} key={id}>
-    <StyledLink to={`/pokemon/${id}`}>
+    <StyledLink to={`/pokemon/${id}`} replace>
       <img src={url} alt={pokemon} />
       <p>{pokemon}</p>
     </StyledLink>
