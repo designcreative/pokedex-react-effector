@@ -13,9 +13,8 @@ import {
 
 import { Header } from "./components/Header";
 
-class App extends React.Component {
-  render() {
-    return (
+const App = () => {
+  return (
       <React.Fragment>
         <Header />
         <Router>
@@ -27,7 +26,6 @@ class App extends React.Component {
         </Router>
       </React.Fragment>
     );
-  }
 }
 
 export default withRouter(App);

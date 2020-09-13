@@ -1,8 +1,8 @@
-import Dashboard from "./components/Dashboard";
+import Dashboard from "./containers/Dashboard/Dashboard";
 import Pokemon from "./components/Pokemon";
 
 const routes = [
-  { path: "/pokemon/:id", component: Pokemon },
+  { path: "/pokemon/:name", component: Pokemon },
   { path: "/", component: Dashboard },
 ];
 
