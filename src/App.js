@@ -8,25 +8,24 @@ import {
 } from "react-router-dom";
 // import ReactPaginate from "react-paginate";
 
-// import { pokemon } from "./store/store";
 // import { setPokemon } from "./store/events";
 
 import { Header } from "./components/Header";
 
 const App = () => {
   return (
-      <React.Fragment>
-        <Header />
-        <Router>
-          <Switch>
-            {routes.map((route, idx) => (
-              <Route path={route.path} component={route.component} key={idx} />
-            ))}
-          </Switch>
-        </Router>
-      </React.Fragment>
-    );
-}
+    <React.Fragment>
+      <Header />
+      <Router>
+        <Switch>
+          {routes.map((route, idx) => (
+            <Route path={route.path} component={route.component} key={idx} />
+          ))}
+        </Switch>
+      </Router>
+    </React.Fragment>
+  );
+};
 
 export default withRouter(App);
 
