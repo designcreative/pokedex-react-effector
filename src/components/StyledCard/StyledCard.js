@@ -7,8 +7,12 @@ import { page } from "../../store/store";
 import { setPage } from "../../store/events";
 
 const StyledLink = styled(Link)`
-  display: block;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  color: grey;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
 `;
 
 page.on(setPage, (url) => url);

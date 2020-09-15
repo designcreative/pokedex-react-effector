@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import routes from "./routes";
 import {
   BrowserRouter as Router,
@@ -6,13 +6,14 @@ import {
   Switch,
   withRouter,
 } from "react-router-dom";
-// import ReactPaginate from "react-paginate";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-// import { setPokemon } from "./store/events";
-
-import { Header } from "./components/Header";
+import Header from "./components/Header/Header";
 
 const App = () => {
+  // const [loading, setLoading] = useState(true);
+  // const [pokemons, setPokemons] = useState([]);
+  // const [errorMessages, setErrorMessages] = useState(null);
   return (
     <React.Fragment>
       <Header />

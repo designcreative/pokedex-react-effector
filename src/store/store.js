@@ -1,4 +1,4 @@
-import { createStore, combine } from "effector";
+import { createStore } from "effector";
 
 // Search
 export const formInput = createStore("");
@@ -11,10 +11,7 @@ export const pokemons = createStore([]);
 export const pokemon = createStore([]);
 
 // Pagination
-const offset = createStore(0);
-const data = createStore([]);
-const elements = createStore([]);
-const perPage = createStore(10);
-const currentPage = createStore(0);
-export const paginator = combine([offset, data, elements, perPage, currentPage]);
-// paginator.watch(console.log);
+export const offset = createStore(0);
+
+// Search
+export const searchValue = createStore({});
